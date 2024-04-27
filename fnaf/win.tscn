@@ -1,0 +1,305 @@
+[gd_scene load_steps=19 format=3 uid="uid://bk2tqkojq1gd6"]
+
+[ext_resource type="Texture2D" uid="uid://6koql5k167hx" path="res://fnaf/office/officeclock_0.png" id="1_u5ewr"]
+[ext_resource type="Script" path="res://fnaf/win.gd" id="1_wy6wk"]
+[ext_resource type="Shader" path="res://ui/vhs.gdshader" id="2_m4q7q"]
+[ext_resource type="Texture2D" uid="uid://cl610gvtlv3l0" path="res://fnaf/office/officeclock_1.png" id="2_ya0xg"]
+[ext_resource type="AudioStream" uid="uid://culwlusgwdwfk" path="res://sounds/6am.mp3" id="3_ohncj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wocww"]
+shader = ExtResource("2_m4q7q")
+shader_parameter/shake = 0.015
+shader_parameter/noiseQuality = 250.0
+shader_parameter/noiseIntensity = 0.001
+shader_parameter/offsetIntensity = 0.05
+shader_parameter/colorOffsetIntensity = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_fmytf"]
+resource_name = "material_0"
+transparency = 2
+alpha_scissor_threshold = 0.05
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("1_u5ewr")
+texture_filter = 0
+texture_repeat = false
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_qoocv"]
+_surfaces = [{
+"aabb": AABB(-5, 3.375, -1.98438, 1.00001, 1.00001, 1.00136e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"name": "material_0",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(254, 255, 254, 255, 0, 0, 0, 0, 254, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 254, 255, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_htq66"]
+resource_name = "blockbench_export_mesh"
+_surfaces = [{
+"aabb": AABB(-5, 3.375, -1.98438, 1.00001, 1.00001, 1.00136e-05),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 255, 127, 255, 127, 255, 127, 255, 127, 0, 0),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"material": SubResource("StandardMaterial3D_fmytf"),
+"name": "material_0",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(254, 255, 254, 255, 0, 0, 255, 255, 254, 255, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 254, 255, 0, 0, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_qoocv")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_583l8"]
+resource_name = "material_1"
+transparency = 2
+alpha_scissor_threshold = 0.05
+alpha_antialiasing_mode = 0
+cull_mode = 2
+albedo_texture = ExtResource("2_ya0xg")
+texture_filter = 0
+texture_repeat = false
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_x4l4y"]
+_surfaces = [{
+"aabb": AABB(-5, 3.375, -1.96875, 1.00001, 1.00001, 1.00136e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"name": "material_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(254, 255, 254, 255, 0, 0, 0, 0, 254, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 254, 255, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tg1l4"]
+resource_name = "blockbench_export_mesh3"
+_surfaces = [{
+"aabb": AABB(-5, 3.375, -1.96875, 1.00001, 1.00001, 1.00136e-05),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 255, 255, 255, 255, 255, 255, 255, 255, 0, 0),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"material": SubResource("StandardMaterial3D_583l8"),
+"name": "material_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(254, 255, 254, 255, 0, 0, 255, 255, 254, 255, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 254, 255, 0, 0, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_x4l4y")
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_mk784"]
+_surfaces = [{
+"aabb": AABB(-4.8125, 3.875, -1.95313, 0.31251, 0.06251, 1.00136e-05),
+"format": 34896613377,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"name": "material_0",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(252, 255, 244, 255, 0, 0, 0, 0, 252, 255, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 244, 255, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_b5v4m"]
+resource_name = "blockbench_export_mesh2"
+_surfaces = [{
+"aabb": AABB(-4.8125, 3.875, -1.95313, 0.31251, 0.06251, 1.00136e-05),
+"attribute_data": PackedByteArray(0, 0, 255, 135, 0, 0, 255, 143, 255, 39, 255, 143, 255, 39, 255, 135),
+"format": 34896613399,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 2, 0, 1, 0, 0, 0, 3, 0, 2, 0),
+"material": SubResource("StandardMaterial3D_fmytf"),
+"name": "material_0",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 4,
+"vertex_data": PackedByteArray(252, 255, 244, 255, 0, 0, 255, 255, 252, 255, 0, 0, 0, 0, 255, 255, 0, 0, 0, 0, 0, 0, 255, 255, 0, 0, 244, 255, 0, 0, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255, 255, 127, 255, 255)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_mk784")
+
+[sub_resource type="Environment" id="Environment_ueutm"]
+background_mode = 1
+
+[sub_resource type="Animation" id="Animation_768iw"]
+resource_name = "win"
+length = 10.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("6am:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("effects/camtransition:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 9, 10),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 1), Color(0, 0, 0, 0), Color(0, 0, 0, 0), Color(0, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camera3D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 10),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(-4.5, 4, 1.5), Vector3(-4.5, 4, -1.55)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("clockhand:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(7.9, 8, 8.1),
+"transitions": PackedFloat32Array(-2, -2, -2),
+"update": 0,
+"values": [Vector3(0, 0, -1.48353), Vector3(0, 0, -1.43117), Vector3(0, 0, -1.5708)]
+}
+
+[sub_resource type="Animation" id="Animation_wwf2a"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("6am:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("effects/camtransition:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0, 0, 0, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Camera3D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-4.5, 4, 1.5)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("clockhand:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, -1.48353)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eqn6f"]
+_data = {
+"RESET": SubResource("Animation_wwf2a"),
+"win": SubResource("Animation_768iw")
+}
+
+[node name="win" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0, 0)
+script = ExtResource("1_wy6wk")
+
+[node name="effects" type="CanvasLayer" parent="."]
+
+[node name="camtransition" type="ColorRect" parent="effects"]
+modulate = Color(0, 0, 0, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="vhseffect" type="ColorRect" parent="effects"]
+material = SubResource("ShaderMaterial_wocww")
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.991
+offset_bottom = 7.776
+mouse_filter = 2
+
+[node name="clock" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_htq66")
+skeleton = NodePath("")
+
+[node name="clocknumbers" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_tg1l4")
+skeleton = NodePath("")
+
+[node name="clockhand" type="Node3D" parent="."]
+transform = Transform3D(0.0871558, 0.996195, 0, -0.996195, 0.0871558, 0, 0, 0, 1, -4.5, 3.9, -2)
+
+[node name="clockhand" type="MeshInstance3D" parent="clockhand"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, -3.9, 2)
+mesh = SubResource("ArrayMesh_b5v4m")
+skeleton = NodePath("")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 4, 1.5)
+current = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_ueutm")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.819152, -0.119253, -0.561042, 0.571394, 0.084412, 0.816323, -0.0499905, -0.989269, 0.137287, 0, 0, 0)
+light_energy = 0.25
+directional_shadow_mode = 0
+
+[node name="6am" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_ohncj")
+volume_db = 10.0
+
+[node name="ap" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_eqn6f")
+}
+autoplay = "win"
+
+[connection signal="animation_finished" from="ap" to="." method="_on_ap_animation_finished"]
