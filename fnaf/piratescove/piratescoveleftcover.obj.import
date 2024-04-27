@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://f22x43qwwnus"
+path="res://.godot/imported/piratescoveleftcover.obj-16dbb35eefacf014efac90eed5e1c2fe.mesh"
+
+[deps]
+
+files=["res://.godot/imported/piratescoveleftcover.obj-16dbb35eefacf014efac90eed5e1c2fe.mesh"]
+
+source_file="res://fnaf/piratescove/piratescoveleftcover.obj"
+dest_files=["res://.godot/imported/piratescoveleftcover.obj-16dbb35eefacf014efac90eed5e1c2fe.mesh", "res://.godot/imported/piratescoveleftcover.obj-16dbb35eefacf014efac90eed5e1c2fe.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
